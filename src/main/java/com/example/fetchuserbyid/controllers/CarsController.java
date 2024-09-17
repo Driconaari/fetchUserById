@@ -5,12 +5,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 
-public class IndexController {
+public class CarsController {
 
-
-    @GetMapping("/")
-    public String home() {
-        return "index";
+    @GetMapping("/cars")
+    public String cars() {
+        return "cars"; // Serves cars.html
     }
 
 }
